@@ -9,9 +9,11 @@ import (
 	"testing"
 )
 
-const testDockerfile = `FROM nginx:latest
+const (
+	dockerfileName = "Dockerfile"
+	testDockerfile = `FROM nginx:latest
 `
-const testTasksFile = `[pre-up]
+	testTasksFile = `[pre-up]
 pre-up-task = "echo pre-up"
 
 [post-deploy]
@@ -20,6 +22,7 @@ setup-task = "echo setup"
 [cleanup]
 cleanup-task = "echo cleanup"
 `
+)
 
 func TestSaveDir(t *testing.T) {
 	p := &Pack{
