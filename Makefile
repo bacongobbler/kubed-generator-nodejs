@@ -1,4 +1,4 @@
-NAME            = generator-controller
+NAME            = generator-nodejs
 DIST_DIRS       = find * -maxdepth 0 -type d -exec
 
 # go option
