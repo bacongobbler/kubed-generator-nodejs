@@ -8,6 +8,15 @@
   version = "v0.3.0"
 
 [[projects]]
+  branch = "master"
+  name = "github.com/bacongobbler/kubed-generator-sdk-go"
+  packages = [
+    "manifest",
+    "pack"
+  ]
+  revision = "ae968a3bd2f1e07958ae1fd343cc904f8f94e669"
+
+[[projects]]
   name = "github.com/inconshreveable/mousetrap"
   packages = ["."]
   revision = "76626ae9c91c4f2a10f34cad8ce83ea42c93bb75"
@@ -55,6 +64,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "e8de1d6baeef096a1e9a37ebb8af01750ce89fbecec5f57faf693d85b04715fc"
+  inputs-digest = "95da126667144ded6d6bf509e1aadee9a26b9277c4f1012ac40e37546f25468b"
   solver-name = "gps-cdcl"
   solver-version = 1

@@ -14,8 +14,8 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	"github.com/bacongobbler/kubed-generator-nodejs/pkg/manifest"
-	"github.com/bacongobbler/kubed-generator-nodejs/pkg/pack"
+	"github.com/bacongobbler/kubed-generator-sdk-go/manifest"
+	"github.com/bacongobbler/kubed-generator-sdk-go/pack"
 )
 
 const (
@@ -53,7 +53,7 @@ server.listen(port, (err) => {
   }
 
   console.log(` + "`server is listening on ${port}`" + `);
-})	
+})
 `
 	packagejson = `{
   "name": "example-nodejs",
