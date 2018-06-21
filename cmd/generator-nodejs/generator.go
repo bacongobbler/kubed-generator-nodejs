@@ -49,7 +49,7 @@ const server = http.createServer(requestHandler);
 
 server.listen(port, (err) => {
   if (err) {
-	return console.log(err);
+    return console.log(err);
   }
 
   console.log(` + "`server is listening on ${port}`" + `);
@@ -70,13 +70,13 @@ metadata:
   name: {{ template "{% .AppName %}.{% .Name %}.name" . }}
   labels:
     kubed: {{ template "{% .AppName %}.name" . }}
-		component: {% .Name %}
-		generator: nodejs
+    component: {% .Name %}
+    generator: nodejs
 spec:
   selector:
     matchLabels:
       kubed: {{ template "{% .AppName %}.name" . }}
-			component: {% .Name %}
+      component: {% .Name %}
   replicas: {{ default .Values.{% .Name %}.replicaCount 1 }}
   template:
     metadata:
@@ -101,8 +101,8 @@ metadata:
   name: {{ template "{% .AppName %}.{% .Name %}.name" . }}
   labels:
     kubed: {{ template "{% .AppName %}.name" . }}
-		component: {% .Name %}
-		generator: nodejs
+    component: {% .Name %}
+    generator: nodejs
 spec:
   selector:
     kubed: {{ template "{% .AppName %}.name" . }}
